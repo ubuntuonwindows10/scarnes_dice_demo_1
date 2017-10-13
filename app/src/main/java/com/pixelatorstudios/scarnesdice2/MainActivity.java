@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button Hold;
     Button Reset;
     ImageView diceimg;
-    Random random =  new Random();
+
     int[] ImageArray={R.drawable.dice1,R.drawable.dice2,R.drawable.dice3,R.drawable.dice4,R.drawable.dice5,R.drawable.dice6};
     int k;
     int PlayerScore=0;
@@ -32,11 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        myText1 = (TextView)findViewById(R.id.textView);
-        myText2 = (TextView)findViewById(R.id.textView3);
-        myText3 = (TextView)findViewById(R.id.textView6);
-        myText4 = (TextView)findViewById(R.id.textView7);
-        myText5 = (TextView)findViewById(R.id.textView9);
+
         Roll = (Button)findViewById(R.id.button);
         Hold = (Button)findViewById(R.id.button2);
         Reset = (Button)findViewById(R.id.button3);
@@ -108,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public int ComputerTurn(){
-        final int cscore = random.nextInt(6)+1;
+
         do {
             if (cscore >= 2 && cscore <= 6) {
                 CompTempScore = cscore;
