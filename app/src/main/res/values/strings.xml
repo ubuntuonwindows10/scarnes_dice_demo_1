@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scarne\'sDice 2</string>
+    <string name="button_1">ROLL</string>
+    <string name="button_2">HOLD</string>
+    <string name="button_3">RESET</string>
+    <string name="text_1">Your Score : 0</string>
+    <string name="text_2">Computer Score : 0</string>
+    <string name="text_3">Player Turn Score : 0</string>
+    <string name="text_4">Computer Turn Score : 0</string>
+</resources>
