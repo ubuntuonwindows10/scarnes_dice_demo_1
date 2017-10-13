@@ -112,7 +112,14 @@ public class MainActivity extends AppCompatActivity {
                 myText4.setText("Computer Turn Score : " + CompTempScore);
                 CompScore = CompScore + CompTempScore;
                 myText2.setText("Computer Score : " + CompScore);
-            } 
+            }
+            else {
+
+                CompTempScore = 0;
+                myText4.setText("Computer Turn Score : " + CompTempScore);
+                CompScore = CompScore + CompTempScore;
+                myText2.setText("Your Score : " + CompScore);
+            }
             if(CompScore>=100){
                 return 1;
             }
