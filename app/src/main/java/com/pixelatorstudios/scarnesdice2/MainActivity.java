@@ -1,3 +1,4 @@
+
 package com.pixelatorstudios.scarnesdice2;
 
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        myText1 = (TextView)findViewById(R.id.textView);
+		myText2 = (TextView)findViewById(R.id.textView3);
+		myText3 = (TextView)findViewById(R.id.textView6);
+		myText4 = (TextView)findViewById(R.id.textView7);
+		myText5 = (TextView)findViewById(R.id.textView9);
+        
         Roll = (Button)findViewById(R.id.button);
         Hold = (Button)findViewById(R.id.button2);
         Reset = (Button)findViewById(R.id.button3);
