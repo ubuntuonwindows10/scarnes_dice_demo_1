@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final Random random=new Random();
+
 
         Roll = (Button)findViewById(R.id.button);
         Hold = (Button)findViewById(R.id.button2);
@@ -104,8 +106,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public int ComputerTurn(){
+          Random random=new Random();
 
         do {
+            final int cscore = random.nextInt(6)+1;
+             diceimg.setImageDrawable(getResources().getDrawable(ImageArray[cscore-1]));
             if (cscore >= 2 && cscore <= 6) {
                 CompTempScore = cscore;
                 diceimg.setImageDrawable(getResources().getDrawable(ImageArray[cscore - 1]));
